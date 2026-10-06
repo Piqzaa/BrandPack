@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}BrandPack — Logo handoff, made simple{% endblock %}</title>
+    <link rel="stylesheet" href="/styles/app.css">
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="{{ path('app_home') }}" aria-label="BrandPack home"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span>BrandPack</a>
+        <span class="edition">GOOD DESIGN DESERVES A GOOD HANDOFF.</span>
+        <a class="header-action" href="{{ path('app_brandpack_new') }}">Open workspace <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>{% block body %}{% endblock %}</main>
+    <footer><span>Creative work. Beautifully delivered.</span><span>BrandPack © {{ 'now'|date('Y') }} · In development</span></footer>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

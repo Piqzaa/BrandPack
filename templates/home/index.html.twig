@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+{% block title %}BrandPack — Great design deserves a great handoff{% endblock %}
+{% block body %}
+<div class="handoff-experience" data-experience>
+<div class="experience-stage">
+    <div class="identity-world" aria-hidden="true">
+        <div class="world-word" data-world-word>forma</div>
+        <div class="world-grid"></div>
+        <svg class="world-symbol" viewBox="0 0 400 400">
+            <g class="world-forma" transform="rotate(-9 200 200)"><ellipse cx="108" cy="108" rx="88" ry="108"/><ellipse cx="292" cy="108" rx="88" ry="108"/><ellipse cx="108" cy="292" rx="88" ry="108"/><ellipse cx="292" cy="292" rx="88" ry="108"/></g>
+            <g class="world-sora"><ellipse cx="200" cy="200" rx="178" ry="96" transform="rotate(-32 200 200)"/><circle cx="200" cy="200" r="52"/></g>
+            <path class="world-alto" d="M20 345 L200 25 L380 345 L245 345 L200 260 L155 345 Z"/>
+        </svg>
+        <svg class="world-guides" viewBox="0 0 400 400"><rect x="20" y="20" width="360" height="360"/><circle cx="200" cy="200" r="180"/><path d="M0 200 H400 M200 0 V400"/><g class="vector-handles"><circle cx="20" cy="20" r="5"/><circle cx="380" cy="20" r="5"/><circle cx="20" cy="380" r="5"/><circle cx="380" cy="380" r="5"/><circle cx="200" cy="20" r="5"/><circle cx="200" cy="380" r="5"/></g></svg>
+        <div class="world-spec"><span>01 — VECTOR MASTER</span><span>100% YOUR DESIGN</span></div>
+    </div>
+    <div class="studio-art" data-studio-art>
+        <canvas data-brand-canvas aria-hidden="true"></canvas>
+        <div class="art-fallback" aria-hidden="true"><div class="fallback-sheet">forma<span>IDENTITY SYSTEM / 001</span></div><div class="fallback-folder">BrandPack ↗</div></div>
+        <div class="scene-cursor" aria-hidden="true">DRAG<br>TO TURN</div>
+    </div>
+    <div class="client-preview" aria-label="Illustration of a client Brand Page">
+        <div class="preview-top"><span>BRAND PAGE / EXAMPLE</span><span>↗</span></div>
+        <div class="preview-identity"><span class="preview-flower" aria-hidden="true"><svg viewBox="0 0 100 100"><g fill="currentColor" transform="rotate(-9 50 50)"><ellipse cx="27" cy="27" rx="22" ry="26"/><ellipse cx="73" cy="27" rx="22" ry="26"/><ellipse cx="27" cy="73" rx="22" ry="26"/><ellipse cx="73" cy="73" rx="22" ry="26"/></g></svg><span data-preview-symbol></span></span><strong data-preview-brand>forma</strong><small>Your identity, ready to use.</small></div>
+        <div class="preview-choice"><span>I need my logo for…</span><strong>My website <span>↗</span></strong></div>
+        <div class="preview-file"><span>↧</span><div><strong data-preview-file>forma_primary.svg</strong><small>Sharp at every size · Transparent background</small></div></div>
+        <p class="preview-disclaimer">Illustrative preview · No download yet</p>
+    </div>
+    <div class="stage-caption" aria-hidden="true"><span data-stage-label>THE FINISHED IDENTITY</span><span data-stage-step>00 / STUDIO</span></div>
+</div>
+<section class="studio-hero" aria-labelledby="hero-title" data-studio>
+    <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> THE BRAND HANDOFF TOOL</p>
+        <h1 id="hero-title">Design it.<br><span>Deliver it.</span></h1>
+        <p class="hero-promise">The right logo file. Every time.</p>
+        <p class="hero-description">Your finished identity. Every useful file.<br>One beautiful link for your client.</p>
+        <a class="button" href="{{ path('app_brandpack_new') }}">Create a BrandPack <span aria-hidden="true">↗</span></a>
+        <span class="hero-aside">YOU CREATE. WE TAKE CARE OF THE HANDOFF.</span>
+    </div>
+    <div class="art-label art-label-top" aria-hidden="true"><span>IDENTITY IN MOTION</span><span class="label-cross">+</span></div>
+    <button type="button" class="assembly-toggle" data-assembly-toggle aria-pressed="false">Assemble the pack <span aria-hidden="true">↙</span></button>
+    <div class="art-label art-label-side" aria-hidden="true">001 — <span data-theme-name>FORMA</span><br>INDEPENDENT DESIGN, BEAUTIFULLY DELIVERED.</div>
+    <div class="hero-bottom">
+        <a class="scroll-cue" href="#the-handoff"><span class="scroll-symbol" aria-hidden="true">↓</span><span>SCROLL TO UNPACK<br><small>FROM YOUR STUDIO TO THEIR EVERYDAY</small></span></a>
+        <div class="scene-controls">
+            <div class="identity-switch" role="group" aria-label="Choose an example brand">
+                <button class="identity-option is-active" type="button" data-theme="forma" aria-pressed="true"><i></i>Forma</button>
+                <button class="identity-option" type="button" data-theme="sora" aria-pressed="false"><i></i>Sora</button>
+                <button class="identity-option" type="button" data-theme="alto" aria-pressed="false"><i></i>Alto</button>
+            </div>
+            <button type="button" class="motion-toggle" data-motion-toggle aria-pressed="false">Pause motion <span aria-hidden="true">Ⅱ</span></button>
+        </div>
+    </div>
+    <p class="art-caption">Interactive 3D study · Example identity · Drag to explore</p>
+</section>
+
+<section class="handoff-story" id="the-handoff" aria-label="From your identity to your client">
+    <div class="story-sequence">
+        <article id="masters" data-chapter="0"><span class="story-number">01 / YOUR MASTERS</span><div><h2>Your design.<br><em>Every detail intact.</em></h2><p>Start with the SVG logos you already created. Your primary logo, symbol and wordmark. Your identity stays yours.</p><div class="inline-files"><span>PRIMARY.svg</span><span>SYMBOL.svg</span><span>WORDMARK.svg</span></div></div></article>
+        <article id="package" data-chapter="1"><span class="story-number">02 / THE PACKAGE</span><div><h2>A place for<br><em>every file.</em></h2><p>Check the source. Preview the variants. Prepare clear names and useful formats, all in one considered package.</p><div class="package-list"><span>01 — Source masters <b>SVG</b></span><span>02 — Ready for everyday <b>PNG</b></span><span>03 — Light & dark <b>VARIANTS</b></span></div></div></article>
+        <article id="delivery" data-chapter="2"><span class="story-number">03 / THE HANDOFF</span><div><h2>One link.<br><em>Ready for real life.</em></h2><p>Your client chooses a use. Their Brand Page points them to the right file. A beautiful last impression, with fewer explanations.</p><span class="inline-detail">YOUR IDENTITY → THEIR EVERYDAY</span><a class="text-link" href="{{ path('app_brandpack_new') }}">Explore the workspace ↗</a></div></article>
+    </div>
+</section>
+</div><section class="closing" aria-labelledby="closing-title"><div class="closing-mark" aria-hidden="true"><i></i><i></i><i></i></div><p class="eyebrow" data-reveal>LESS EXPLAINING. MORE CREATING.</p><h2 id="closing-title" data-reveal><span class="closing-word">Finish</span> <span class="closing-word">strong<span class="closing-period">.</span></span></h2><a class="button" data-reveal href="{{ path('app_brandpack_new') }}">Open your workspace <span aria-hidden="true">↗</span></a><p class="development-note">BrandPack is in development. This is an interactive design preview; uploads, exports and sharing are coming next.</p></section>
+{% endblock %}
+{% block scripts %}<script defer src="/scripts/page-motion.js"></script><script type="module" src="/scripts/studio.js"></script>{% endblock %}

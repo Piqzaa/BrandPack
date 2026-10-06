@@ -1,0 +1,17 @@
+name: brandpack
+services:
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - .:/app
+      - vendor:/app/vendor
+      - cache:/app/var
+    environment:
+      APP_ENV: dev
+      APP_DEBUG: "1"
+    init: true
+volumes:
+  vendor:
+  cache:
